@@ -4,10 +4,10 @@ In this challenge you'll be designing schemas for three different applications. 
 
 Some conventions to keep in mind as you design your schemas:
 
-* Always name your tables as plural nouns
-* All identifiers (table names & columns should be lowercase)
+* Always name your tables as plural nouns.
+* All identifiers (table names & columns) should be lowercase.
 * Each table should have an integer primary key named `id`.
-* Foreign keys end with a `_id` suffix
+* Foreign keys end with a `_id` suffix.
 * Foreign keys should usually be named as the singular form of the other table, e.g. `product_id` is a foreign key that links to the `id` column of the `products` table.
 * Don't repeat the same data in more than one table.
 * Avoid storing more than one type of record per table. E.g. don't store a user's address in the users table.
