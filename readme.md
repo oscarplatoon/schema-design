@@ -1,6 +1,6 @@
 # Schema Design
 
-In this challenge you'll be designing schemas for three different applications. Use the online tool [Quick Database Diagrams](https://www.quickdatabasediagrams.com) to design your schemas.
+In this challenge you'll be designing schemas for three different applications. Use this online [tool](https://schemadesigner.devbootcamp.com/) to design your schemas.
 
 Some conventions to keep in mind as you design your schemas:
 
