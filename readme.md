@@ -1,6 +1,6 @@
 # Schema Design
 
-In this challenge you'll be designing schemas for three different applications. Use this online [tool](https://schemadesigner.devbootcamp.com/) to design your schemas.
+In this challenge you'll be designing schemas for three different applications. Use this online [tool](https://schemadesigner.devbootcamp.com/) or [Quick Database Diagrams](https://www.quickdatabasediagrams.com) to design your schemas.
 
 Some conventions to keep in mind as you design your schemas:
 
@@ -15,7 +15,7 @@ Some conventions to keep in mind as you design your schemas:
 
 Keep in mind these services have been around for years and you won't have time to design a schema that covers their entire feature set. Your aim is to design a schema that could support the feature set you imagine they launched with, not the one they have today.
 
-Start designing with pen & paper or a whiteboard. Then transfer your design to [Quick Database Diagrams](https://www.quickdatabasediagrams.com).
+Start designing with pen & paper or a whiteboard. Then move your design online!
 
 Each schema design prompt includes some of the models you might consider including. Don't consider this list to be final or even correct. Imagine the typical use cases and ensure you have the tables to support those.
 
