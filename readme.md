@@ -1,6 +1,6 @@
 # Schema Design
 
-In this challenge you'll be designing schemas for three different applications. Use this online [tool](http://db.lewagon.com/) or [Quick Database Diagrams](https://www.quickdatabasediagrams.com) to design your schemas.
+In this challenge you'll be designing schemas for three different applications. Use [Quick Database Diagrams](https://www.quickdatabasediagrams.com) to design your schemas.
 
 Some conventions to keep in mind as you design your schemas:
 
@@ -20,14 +20,12 @@ Start designing with pen & paper or a whiteboard. Then move your design online!
 Each schema design prompt includes some of the models you might consider including. Don't consider this list to be final or even correct. Imagine the typical use cases and ensure you have the tables to support those.
 
 ## GrubHub Online Ordering
-
 * order
 * restaurant
 * menu item
 * user
 
 ## Blue Apron
-
 * user
 * service plans
 * recipe
@@ -35,11 +33,8 @@ Each schema design prompt includes some of the models you might consider includi
 * delivery
 
 ## Instagram
-
 * user
 * post
 * comment
 * like
 * follow
-
-
