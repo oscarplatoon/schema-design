@@ -13,7 +13,7 @@ Address
 id
 user_id
 street 
-street2
+street2 
 city
 state
 zip_code
@@ -21,4 +21,10 @@ country
 
 In the example above, each Address can belong to a User. This is achieved by adding a column called `user_id`, which can match only ONE of the values in the `id` column of the User table. Remember, `id`s are unique; no table can have two `id` values that are the same.
 
-Using that format, jot down the database for your app below!
+Using the above format, jot down the database for your apps below!
+
+## GrubHub Online Ordering
+
+## Blue Apron
+
+## Instagram
