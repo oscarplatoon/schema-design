@@ -24,7 +24,9 @@ In the example above, each Address can belong to a User. This is achieved by add
 Using the above format, jot down the database for your apps below!
 
 ## GrubHub Online Ordering
-
+orders
+-
+orderid PK int
 ## Blue Apron
 
 ## Instagram
