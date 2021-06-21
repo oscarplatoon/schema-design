@@ -1,63 +1,65 @@
--- -- ## Blue Apron
--- -- * user
--- -- * service plans
--- -- * recipe
--- -- * promotion
--- -- * delivery
-
--- users
--- -----
--- user_id PK int
--- user_name varchar(255)
--- contact_phone int(10)
--- address_id FK >-< addresses.address_id
--- service_plan FK - sp.service_plan_id
-
--- addresses
--- -----
--- address_id PK int
--- street varchar(255)
--- street2 varchar(255) NULL
--- city varchar(255)
--- state varchar(20)
--- zip_code int(10)
--- country varchar(255)
-
--- service_plans as sp
--- -----
--- service_plan_id PK int
--- service_plan_name varchar(255)
--- service_plan_price decimal(4,2)
--- service_plan_promotions FK >-< promotions.promotion_id
-
--- recipes as rcp
--- -----
--- recipe_id PK int
--- name varchar(40)
--- description varchar(255)
--- ingredients varchar(255) #Add an ingredients table?
-
--- promotions
--- -----
--- promotion_id PK int
--- promotion_start_date date NULL
--- promotion_end_date date NULL
--- promotion_time_start time NULL
--- promotion_time_end time NULL
--- promotion_price decimal(4,2)
-
--- deliveries as del
--- -----
--- delivery_id PK int
--- delivery_recipe FK -< rcp.recipe_id
--- delivery_recipient FK - users.user_id
--- delivery_date date
+## Blue Apron
+* user
+* service plans
+* recipe
+* promotion
+* delivery
 
 
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+-- Input to QuickDBDiagram:
+users
+-----
+user_id PK int
+user_name varchar(255)
+contact_phone int(10)
+address_id FK >-< addresses.address_id
+service_plan FK - sp.service_plan_id
+
+addresses
+-----
+address_id PK int
+street varchar(255)
+street2 varchar(255) NULL
+city varchar(255)
+state varchar(20)
+zip_code int(10)
+country varchar(255)
+
+service_plans as sp
+-----
+service_plan_id PK int
+service_plan_name varchar(255)
+service_plan_price decimal(4,2)
+service_plan_promotions FK >-< promotions.promotion_id
+
+recipes as rcp
+-----
+recipe_id PK int
+name varchar(40)
+description varchar(255)
+ingredients varchar(255) #Add an ingredients table?
+
+promotions
+-----
+promotion_id PK int
+promotion_start_date date NULL
+promotion_end_date date NULL
+promotion_time_start time NULL
+promotion_time_end time NULL
+promotion_price decimal(4,2)
+
+deliveries as del
+-----
+delivery_id PK int
+delivery_recipe FK -< rcp.recipe_id
+delivery_recipient FK - users.user_id
+delivery_date date
 
 
+Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+
+--Output from quickDBDiagram: 
 CREATE TABLE "users" (
     "user_id" int   NOT NULL,
     "user_name" varchar(255)   NOT NULL,
