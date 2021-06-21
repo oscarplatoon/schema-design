@@ -1,34 +1,47 @@
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+-- ## GrubHub Online Ordering
 
--- Customer
--- -
--- CustomerID PK int
--- Name string INDEX
--- Address1 string
--- Address2 NULL string
--- Address3 NULL string
--- Order
--- -
--- OrderID PK int
--- CustomerID int FK >- Customer.CustomerID
--- TotalAmount money
--- OrderStatusID int FK >- os.OrderStatusID
--- OrderLine as ol
--- ----
--- OrderLineID PK int
--- OrderID int FK >- Order.OrderID
--- ProductID int FK >- p.ProductID
--- Quantity int
--- Product as p
--- ------------
--- ProductID PK int
--- Name varchar(200) UNIQUE
--- Price money
--- OrderStatus as os
--- ----
--- OrderStatusID PK int
--- Name UNIQUE string
+-- users
+-- -----
+-- id PK int
+-- customer_name varchar(255)
+-- contact_phone int(10)
+-- address_id int FK >-< addresses.id #users can have multiple addresses
+
+
+-- orders
+-- -----
+-- id PK int
+-- user_id int FK - users.id
+-- providing_restaurant_id int FK - rest.id
+-- ordered_items int FK -< mi.id
+-- timestamp timestamp
+-- order_status varchar(100)
+
+-- addresses
+-- -----
+-- id PK int
+-- street varchar(255)
+-- street2 varchar(255) NULL
+-- city varchar(255)
+-- state varchar(20)
+-- zip_code int(10)
+-- country varchar(255)
+
+-- restaurants as rest
+-- -----
+-- id PK int
+-- restaurant_name varchar(255)
+-- contact_phone int(10)
+-- address_id int FK >-< addresses.id
+
+
+-- menuitems as mi
+-- -----
+-- id PK int
+-- name varchar(40)
+-- description varchar(255)
+-- price decimal(12,2)
+
 
 CREATE TABLE "users" (
     "id" int   NOT NULL,
