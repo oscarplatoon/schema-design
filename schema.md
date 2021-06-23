@@ -24,7 +24,71 @@ In the example above, each Address can belong to a User. This is achieved by add
 Using the above format, jot down the database for your apps below!
 
 ## GrubHub Online Ordering
+Order
+-------------------
+order_id
+user_id
+cost
+
+Restaurant
+-------------------
+restaurant_id
+product
+
+Item
+-------------------
+item_id
+item
+
+User
+-------------------
+user_id
+name
+email
+phone
+
 
 ## Blue Apron
+User
+-------------------
+user_id
+service_id    NULL
+first_name
+last_name
+address
+email
+phone
+
+Service_plans
+-------------------
+service_id
+recipe_id
+subscription_type
+qauntity
+cost
+
+
+Recipe
+-------------------
+recipe_id
+item
+calories
+weight
+
+
+Promotion
+-------------------
+
+
+Delivery
+-------------------
+user_id
+service_id
+status?
 
 ## Instagram
+User
+-------------------
+id
+first_name
+last_name
