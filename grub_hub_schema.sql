@@ -6,6 +6,10 @@ CREATE TABLE grubhub (
   user_id      INTEGER
 );
 
+
+
+
+
 ALTER TABLE grubhub
 ADD CONSTRAINT fk_user_id
 FOREIGN KEY (user_id)
