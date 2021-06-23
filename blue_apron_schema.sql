@@ -9,11 +9,25 @@
 -- Input to QuickDBDiagram:
 users
 -----
-user_id PK int
+id PK int
 user_name varchar(255)
+password string
 contact_phone int(10)
 address_id FK >-< addresses.address_id
 service_plan FK - sp.service_plan_id
+
+users_promotions
+-
+id pk int
+user_id fk - users.users_id
+promotion_id -< promotions.id
+
+service_plans as sp
+-----
+service_plan_id PK int
+service_plan_name varchar(255)
+service_plan_price decimal(4,2)
+service_plan_promotions FK >-< promotions.promotion_id
 
 addresses
 -----
@@ -25,19 +39,25 @@ state varchar(20)
 zip_code int(10)
 country varchar(255)
 
-service_plans as sp
------
-service_plan_id PK int
-service_plan_name varchar(255)
-service_plan_price decimal(4,2)
-service_plan_promotions FK >-< promotions.promotion_id
 
 recipes as rcp
 -----
 recipe_id PK int
 name varchar(40)
 description varchar(255)
-ingredients varchar(255) #Add an ingredients table?
+ingredients FK >-< ingredients.id 
+
+ingedients
+-
+id PK int
+name string
+
+recipes_ingredients
+-
+id PK int
+recipe_id FK - recipes.id
+ingredients_id FK ingredients.id
+amount int
 
 promotions
 -----
