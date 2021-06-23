@@ -1,10 +1,10 @@
 DROP TABLE IF EXISTS instagram CASCADE;
 CREATE TABLE instagram (
-  user_id       INTEGER
+  user_id       INTEGER,
   post          VARCHAR(255) NOT NULL,
   comment       VARCHAR(255) NOT NULL,
-  like          BOOLEAN,
-  follow        BOOLEAN,
+  does_like     BOOLEAN,
+  follow        BOOLEAN
 );
 
 ALTER TABLE instagram

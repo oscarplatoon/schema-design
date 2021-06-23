@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS grubhub CASCADE;
 CREATE TABLE grubhub (
-  order        VARCHAR(255) NOT NULL,
-  retaurant    VARCHAR(255) NOT NULL,
+  order_id     VARCHAR(255) NOT NULL,
+  restaurant   VARCHAR(255) NOT NULL,
   menu_item    VARCHAR(255) NOT NULL,
   user_id      INTEGER
 );
